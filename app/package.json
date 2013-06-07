@@ -1,0 +1,12 @@
+{
+    "name":"node-self-examples",
+    "description":"Examples from my talk at SELF 2013",
+
+    "dependencies":{
+        "ntwitter":"0.5.x",
+        "redis":"0.8.x",
+        "socket.io":"0.9.x",
+        "express":"3.2.x"
+    }
+
+}
