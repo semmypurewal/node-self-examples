@@ -13,7 +13,10 @@ $(document).ready(function () {
         var words = data.words,
             counts = data.counts;
         data.words.forEach(function (word) {
-            $("body").append("<p class="+word+">"+word+":"+counts[words.indexOf(word)]+"</p>");
+            var count = counts[words.indexOf(word)];
+            if ($("." + word).length === 0) {
+                $("body").append("<p class="+word+">"+word+":"+count+"</p>");
+            }
         });
     });
 
